@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks=[
   
@@ -11,17 +12,26 @@ const navLinks=[
 
 export default function Home(){
   return(
-    <div className="bg-yellow-400 font-extrabold">
+    <div className="bg-black font-extrabold">
       <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 flex items-center justify-between">
-      <span className="font-bold text-xl">MUNGU FUNDI AGENCY</span>
+      {/* <span className="font-bold text-xl">MUNGU FUNDI AGENCY</span> */}
 
+      <Link href="/">
+      <Image
+       src="/images/Mungu_fundi_Logo-removebg-preview.png"
+      alt="Mungu Fundi logo"
+      width={100}
+      height={40}
+      className="h-auto w-auto"
+      priority/>
+      </Link>
       <nav>
-        <div className="flex gap-20 btn rounded-3xl px-5 py-2 text-black">
+        <div className="flex gap-3 sm:gap-5 text-black">
           {navLinks.map((link) =>(
             <Link 
             key={link.href}
             href={link.href}
-            className="bg-white rounded-2xl px-2"
+            className="bg-white rounded-full py-2 px-4 text-sm sm:text-base hover:bg yellow-400 transition-colors"
             >
               {link.label}
             </Link>
