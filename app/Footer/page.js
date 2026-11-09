@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 
 const quickLinks = [
   { label: "Home", href: "/" },
