@@ -18,6 +18,18 @@ export default function Footer(){
             Telling stories that move people. (dummy tagline)
           </p>
         </div>
+        <div>
+          <h3 className="mb-3 text-lg font-semibold text-[#E8B923]">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            {quickLinks.map((link) => (
+              <li key={link.label}>
+                <Link href={link.href} className="hover:text-[#E8B923]">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
             </div>
         </footer>
     )
