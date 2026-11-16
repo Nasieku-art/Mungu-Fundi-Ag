@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "254700000000"; 
+const WHATSAPP_NUMBER = "254701391756"; 
 const WHATSAPP_MESSAGE = "Hello Mungu Fundi, I would like to know more.";
 
 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -7,7 +7,7 @@ const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent
 
 const contactDetails = [
   { label: "Email", value: "info@mungufundi.com", href: "mailto:info@mungufundi.com" },
-  { label: "Phone", value: "+254 700 000 000", href: "tel:+254700000000" },
+  { label: "Phone", value: "+254 701391756", href: "tel:+254701391756" },
   { label: "Location", value: "Nairobi, Kenya", href: null },
 ];
 
